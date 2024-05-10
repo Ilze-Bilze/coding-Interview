@@ -122,12 +122,15 @@
 #services {
 
     .cs-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: var(--secondary);
-        border-radius: 27px;
-        overflow: hidden;
+        
+        .wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secondary);
+            border-radius: 27px;
+            overflow: hidden;
+        }
 
         h2 {
             color: #ffffff;
@@ -144,13 +147,17 @@
         padding-right: 41px;
         padding-top: 80px;
         padding-bottom: 79px;
+        z-index: 1;
     }
 
     .image-bacground {
         display: block;
         position: relative;
+        right: 0;
+        top: 0;
+        bottom: 0;
         height: 100%;
-        max-width: 493px;
+        max-width: 100%;
 
             img {
                 width: 100%;
@@ -167,16 +174,23 @@
 
     #services {
         .cs-container {
-            flex-direction: row;
+            .wrapper {
+                flex-direction: row;
+
+                .image-bacground {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    height: 100%;
+                    max-width: 515px;
+                }
+            }
 
             .text-content {
                 max-width: 661px;
-                padding-left: 0;
             }
-        }
-
-        .image-bacground {
-            border: 1px solid red;
         }
     }
 }
