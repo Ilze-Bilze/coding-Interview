@@ -952,6 +952,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 30px;
         background-color: rgba(217, 217, 217, 0.36);
         border-radius: 26px;
@@ -962,7 +963,7 @@ a {
         .card {
             background-color: #fff;
             border-radius: 26px;
-            max-width: 295px;
+            max-width: 100%;
             padding: 64px 33px 53px 33px;
             font-size: 14px;
 
