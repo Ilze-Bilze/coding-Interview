@@ -939,8 +939,31 @@ a {
     }
 }
                                 
+/*-- -------------------------- -->
+<---     Pricing & Packages     -->
+<--- -------------------------- -*/
+#pricing {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(217, 217, 217, 0.36);
+        border-radius: 26px;
+        padding: 39px 35px;
 
+        .card {
+            background-color: #fff;
+            border: 1px solid green;
+            border-radius: 26px;
+        }
+    }
+}
 
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+    }
+}
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
